@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+
+<div class="position-relative" >
+    <form>
+        <fieldset class="box mt-4 mx-4">
+
+            <h2 class="title"style="text-align:center;">Dilivery Address </h2>
+
+            <label class="lable"style="text-align:center;">Name</label>
+            <input type="text" placeholder="Enter Your full Name" class="inpt text-center">
+            <Br>
+            <label class="lable"style="text-align:center;">Contact Details</label>
+            <input type="number" placeholder="Enter Your number" class="inpt text-center" >
+            <br>
+            <label class="lable"style="text-align:center;">Email</label>
+            <input type="email" placeholder="Enter your Email" class="inpt text-center" >
+            <br>
+            <label class="lable"style="text-align:center;">Your Address</label>
+            <input type="text" placeholder="Enter your Full Address" class="inpt text-center" >
+            <br>
+            <label class="lable"style="text-align:center;">PINCODE</label>
+            <input type="number" placeholder="Enter Your PIN" class="inpt text-center" >
+            <br>
+            <a href="/makepayment" class="btn btn-primary">MAKE PAYMENT</a>
+
+
+        </fieldset>
+    </form>
+</div>
+
+
+
+
+{% endblock 'main' %}

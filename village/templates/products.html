@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main' %}
+<div class="container mt-3">
+    
+    <div class="row">
+        {% for x in data %}
+        <div class="col-md-3">
+          <div class="card" style="width: 100%; height:100%;">
+                <img src="{{x.pimage.url}}" class="card-img-top" alt="..." style="width: 60%; height:60%;">
+                <div class="card-body">
+                    <h5 class="card-title">{{x.name}}</h5>
+                    <p class="card-text">{{x.pdetails}}</p>
+                    <p class="card-text">Rs :{{x.price}}/-</p>
+                    <a href="/Product_DE/{{x.id}}" class="btn btn-primary">See Details</a>
+                </div>
+          </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+{% endblock 'main' %}
