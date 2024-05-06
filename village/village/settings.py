@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-_#kmzuvg$h*pyb&qv#r!!$=m&j)1s)4$10r)e1go+0(c*%s0cr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 EMAIL_HOST='smtp.gmail.com'#send msg transfer protocol
 Email_HOST_USER='prajwalwarhade07@gmail.com'
